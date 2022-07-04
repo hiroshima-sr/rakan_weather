@@ -82,9 +82,9 @@
             <v-table density="compact">
               <thead>
                 <tr>
-                  <th class="text-left">zi(h)</th>
-                  <th class="text-left">kou(mm)</th>
-                  <th class="text-left">kio(C)</th>
+                  <th class="text-left">時刻(h)</th>
+                  <th class="text-left">降水量(mm)</th>
+                  <th class="text-left">気温(℃)</th>
                 </tr>
               </thead>
               <tbody>
