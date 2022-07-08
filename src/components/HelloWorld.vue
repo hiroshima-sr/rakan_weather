@@ -25,22 +25,58 @@
                     <v-card-text v-if="value.status !== 'normal'" class="py-5">
                       <v-card-title class="text-h4">
                         <v-row>
-                          <v-col> {{d_status[value.status].title}} </v-col>
+                          <v-col> {{ d_status[value.status].title }} </v-col>
                           <v-col class="text-right">
                             <v-icon x-large color="red darken-2 pb-3">
-                              {{d_status[value.status].icon}}
+                              {{ d_status[value.status].icon }}
                             </v-icon>
                           </v-col>
                         </v-row>
                       </v-card-title>
-                      <v-card-subtitle>  </v-card-subtitle>
+                      <v-card-subtitle> </v-card-subtitle>
                       <div class="text-h4 ml-4" cols="6">
-                        {{d_status[value.status].text}}
+                        {{ d_status[value.status].text }}
                       </div>
                     </v-card-text>
 
                     <v-divider></v-divider>
-                    
+
+                    <v-card-text class="py-5">
+                      <v-card-title class="text-h4">
+                        <v-row>
+                          <v-col> 天候 </v-col>
+                          <v-col class="text-right">
+                            <v-icon x-large color="red darken-2 pb-6">
+                              mdi-chart-timeline
+                            </v-icon>
+                          </v-col>
+                        </v-row>
+                      </v-card-title>
+                      <v-card-subtitle> 当日12時～23時 → 翌日0時～12時 </v-card-subtitle>
+                      <div class="text-h4 ml-4" cols="6">
+                        <v-icon
+                          x-large
+                          :color="value.lowWeathercode.color"
+                          class="darken-2"
+                        >
+                          {{ value.lowWeathercode.mark }}
+                        </v-icon>
+                        →
+                        <v-icon
+                          x-large
+                          :color="value.upperWeathercode.color"
+                          class="darken-2"
+                        >
+                          {{ value.upperWeathercode.mark }}
+                        </v-icon>
+                      </div>
+                      <div class="text-h4 ml-8" cols="6">
+                        {{value.lowWeathercode.text}}   →   {{value.upperWeathercode.text}}
+                      </div>
+                    </v-card-text>
+
+                    <v-divider></v-divider>
+
                     <v-card-text class="py-5">
                       <v-card-title class="text-h4">
                         <v-row>
@@ -98,6 +134,7 @@
                         <th class="text-left">時刻(h)</th>
                         <th class="text-left">降水量(mm)</th>
                         <th class="text-left">気温(℃)</th>
+                        <th class="text-left">天候</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -105,6 +142,7 @@
                         <td>{{ value.hour[index] }}</td>
                         <td>{{ value.precipitation[index] }}</td>
                         <td>{{ value.temperature[index] }}</td>
+                        <td>{{ value.weathercode[index].text }}</td>
                       </tr>
                     </tbody>
                   </v-table>
