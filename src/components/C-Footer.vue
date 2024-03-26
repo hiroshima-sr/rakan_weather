@@ -32,7 +32,7 @@
        <div>実際の状況とは情報が異なる場合がございます。</div> 
       </v-card-text>
     <v-card-text class="white--text pa-2">
-        {{ new Date().getFullYear() }} © <strong>mahanma</strong>. All Rights Reserved.
+        {{ new Date().getFullYear() }} © <strong>sr</strong>. All Rights Reserved.
       </v-card-text>
   </v-footer>
 </template>
@@ -40,8 +40,8 @@
 <script>
 export default {
   data: () => ({
-    icons: ["mdi-twitter"],
-    hrefs: ["https://twitter.com/mahanma_"]
+    icons: [""],
+    hrefs: [""]
   }),
 };
 </script>
