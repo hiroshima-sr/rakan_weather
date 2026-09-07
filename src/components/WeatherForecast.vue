@@ -22,25 +22,6 @@
               <v-row>
                 <v-col>
                   <v-card class="mx-auto" max-width="400">
-                    <v-card-text v-if="value.status !== 'normal'" class="py-5">
-                      <v-card-title class="text-h4">
-                        <v-row>
-                          <v-col> {{ d_status[value.status].title }} </v-col>
-                          <v-col class="text-right">
-                            <v-icon x-large color="red darken-2 pb-3">
-                              {{ d_status[value.status].icon }}
-                            </v-icon>
-                          </v-col>
-                        </v-row>
-                      </v-card-title>
-                      <v-card-subtitle> </v-card-subtitle>
-                      <div class="text-h4 ml-4" cols="6">
-                        {{ d_status[value.status].text }}
-                      </div>
-                    </v-card-text>
-
-                    <v-divider></v-divider>
-
                     <v-card-text class="py-5">
                       <v-card-title class="text-h4">
                         <v-row>
@@ -212,24 +193,12 @@
 <script>
 import rakan from "../assets/raka.json";
 export default {
-  name: "HelloWorld",
+  name: "WeatherForecast",
 
   data: () => ({
     rakan: rakan,
     dialog: false,
     tab: null,
-    d_status: {
-      po: {
-        icon: "mdi-block-helper",
-        title: "交通整理中",
-        text: "現在交通整理が行われています。",
-      },
-      zi: {
-        icon: "mdi-block-helper",
-        title: "事故発生",
-        text: "現在事故が発生しています。",
-      },
-    },
   }),
 };
 </script>

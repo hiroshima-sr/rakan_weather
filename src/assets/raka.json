@@ -8,7 +8,6 @@
   "minRain": 0,
   "avgTemp": 23.4,
   "avgRain": 0,
-  "status": "normal",
   "hour": [
    12,
    13,
@@ -264,7 +263,6 @@
   "minRain": 0,
   "avgTemp": 23.4,
   "avgRain": 0,
-  "status": "normal",
   "hour": [
    12,
    13,
@@ -520,7 +518,6 @@
   "minRain": 0,
   "avgTemp": 23.1,
   "avgRain": 0.2,
-  "status": "normal",
   "hour": [
    12,
    13,
@@ -776,7 +773,6 @@
   "minRain": 0,
   "avgTemp": 20.8,
   "avgRain": 1.1,
-  "status": "normal",
   "hour": [
    12,
    13,
@@ -1032,7 +1028,6 @@
   "minRain": 0,
   "avgTemp": 23.4,
   "avgRain": 0,
-  "status": "normal",
   "hour": [
    12,
    13,
@@ -1288,7 +1283,6 @@
   "minRain": 0,
   "avgTemp": 23.6,
   "avgRain": 0.6,
-  "status": "normal",
   "hour": [
    12,
    13,
@@ -1544,7 +1538,6 @@
   "minRain": 0,
   "avgTemp": 24.3,
   "avgRain": 0.3,
-  "status": "normal",
   "hour": [
    12,
    13,
